@@ -74,10 +74,10 @@ export default function WhatYouLearnSection() {
           >
             <div className="grid grid-cols-2 gap-4">
               {[
-                { title: "Color Schemes", query: "interior design color palette mood board" },
-                { title: "Space Planning", query: "floor plan layout design blueprint" },
-                { title: "Lighting Guide", query: "modern living room ambient lighting design" },
-                { title: "Furniture Tips", query: "furniture arrangement living room layout" },
+                { title: "Color Schemes", image: "8.jpg" },
+                { title: "Space Planning", image: "9.jpg" },
+                { title: "Lighting Guide", image: "10.jpg" },
+                { title: "Furniture Tips", image: "7.jpg" },
               ].map((preview, index) => (
                 <motion.div
                   key={preview.title}
@@ -87,11 +87,11 @@ export default function WhatYouLearnSection() {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="group relative bg-white rounded-xl overflow-hidden shadow-lg shadow-[#0A3D91]/10 hover:shadow-xl hover:shadow-[#0A3D91]/20 transition-all duration-300"
                 >
-                  <div className="aspect-[4/5] relative">
+                  <div className="relative h-[300px]">
                     <img
-                      src={`/.jpg?height=300&width=240&query=${preview.query}`}
+                      src={`/images/${preview.image}`}
                       alt={preview.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain bg-white"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0A3D91]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">

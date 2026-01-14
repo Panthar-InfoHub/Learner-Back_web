@@ -1,7 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { FileText, Video, Palette, Gift } from "lucide-react"
+import { FileText, Palette, Gift } from "lucide-react"
+import { Pencil } from "lucide-react"
 
 const bonuses = [
   {
@@ -11,8 +12,8 @@ const bonuses = [
     value: "₹500",
   },
   {
-    icon: Video,
-    title: "15-Minute Video Guide on Color Schemes",
+    icon: Pencil,
+    title: "Sketchup and Vary course",
     description: "Quick masterclass on choosing the perfect color combinations",
     value: "₹800",
   },

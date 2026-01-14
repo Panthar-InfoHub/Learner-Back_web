@@ -85,9 +85,9 @@ export default function HeroSection() {
                       <div className="mt-4 w-20 h-1 bg-[#0A3D91] mx-auto" />
                     </div>
                     <img
-                      src="/luxury-modern-living-room.png"
+                      src="/images/1.jpg"
                       alt="Interior Design Preview"
-                      className="w-full h-40 object-cover rounded-lg"
+                      className="w-full h-64 object-contain rounded-lg"
                     />
                     <div className="space-y-2">
                       <div className="w-3/4 h-2 bg-[#E6F1FF] rounded" />

@@ -38,7 +38,7 @@ export default function AuthorSection() {
               <div className="absolute inset-0 bg-[#0A3D91] rounded-full blur-3xl opacity-20 scale-110" />
               <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl">
                 <img
-                  src="/professional-indian-male-interior-designer-portrai.jpg"
+                  src="/images/person.jpg"
                   alt="Nitesh - Interior Designer"
                   className="w-full h-full object-cover"
                 />
@@ -59,7 +59,7 @@ export default function AuthorSection() {
             className="space-y-6"
           >
             <div className="space-y-4">
-              <h3 className="font-serif text-3xl font-bold text-[#0A3D91]">Hi, I'm Nitesh</h3>
+              <h3 className="font-serif text-3xl font-bold text-[#0A3D91]">Hi, I'm Rithika</h3>
               <p className="text-lg text-[#4a5568] leading-relaxed">
                 An interior designer helping homeowners and aspiring designers turn ordinary rooms into stunning spaces.
                 This eBook is the result of my{" "}

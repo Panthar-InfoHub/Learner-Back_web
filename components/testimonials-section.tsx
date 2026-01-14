@@ -7,28 +7,28 @@ const testimonials = [
   {
     name: "Riya M.",
     location: "Pune",
-    image: "young indian woman professional smiling portrait",
+    image: "14.png",
     rating: 5,
     text: "This guide completely changed how I plan my spaces — practical and visually stunning! Every page is packed with actionable tips.",
   },
   {
     name: "Arun K.",
     location: "Mumbai",
-    image: "indian businessman professional headshot smiling",
+    image: "male1.png",
     rating: 5,
     text: "As someone with zero design experience, this eBook made everything so simple. My living room has never looked better!",
   },
   {
-    name: "Priya S.",
+    name: "Anjali S.",
     location: "Bangalore",
-    image: "indian woman entrepreneur portrait confident",
+    image: "15.png",
     rating: 5,
     text: "The color psychology section alone is worth the price. I've recommended this to all my friends who are decorating their homes.",
   },
   {
     name: "Vikram J.",
     location: "Delhi",
-    image: "young indian man creative professional portrait",
+    image: "13.png",
     rating: 5,
     text: "Finally, a guide that doesn't just show pretty pictures but actually teaches you the 'why' behind great design decisions.",
   },
@@ -64,7 +64,7 @@ export default function TestimonialsSection() {
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#D7E8FF]">
                   <img
-                    src={`/.jpg?height=80&width=80&query=${testimonial.image}`}
+                    src={`/images/${testimonial.image}`}
                     alt={testimonial.name}
                     className="w-full h-full object-cover"
                   />
