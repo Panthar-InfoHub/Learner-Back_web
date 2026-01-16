@@ -85,7 +85,7 @@ export default function HeroSection() {
                       <div className="mt-4 w-20 h-1 bg-[#0A3D91] mx-auto" />
                     </div>
                     <img
-                      src="/images/1.jpg"
+                      src="/images/1.png"
                       alt="Interior Design Preview"
                       className="w-full h-64 object-contain rounded-lg"
                     />
