@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Star, Download, CheckCircle } from "lucide-react"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 export default function HeroSection() {
   return (
@@ -22,7 +23,7 @@ export default function HeroSection() {
           >
             <div className="inline-flex items-center gap-2 bg-[#D7E8FF] text-[#0A3D91] px-4 py-2 rounded-full text-sm font-medium">
               <Star className="w-4 h-4 fill-[#0A3D91]" />
-              <span>Bestselling Interior Design Guide</span>
+              <span>Bestselling Interior's Design Guide</span>
             </div>
 
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#0A3D91] leading-tight text-balance">
@@ -34,13 +35,15 @@ export default function HeroSection() {
             </p>
 
             <div className="space-y-4">
-              <Button variant="secondary"
-                size="lg"
-                className="bg-[#0A3D91] hover:bg-[#083070] text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-[#0A3D91]/25 transition-all duration-300 hover:shadow-xl hover:shadow-[#0A3D91]/30 hover:-translate-y-1"
-              >
-                <Download className="w-5 h-5 mr-2" />
-                Download Now for ₹499
-              </Button>
+              <Link href="https://learnerbag.com/ebook-2-2/" >
+                <Button variant="secondary"
+                  size="lg"
+                  className="bg-[#0A3D91] hover:bg-[#083070] text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-[#0A3D91]/25 transition-all duration-300 hover:shadow-xl hover:shadow-[#0A3D91]/30 hover:-translate-y-1"
+                >
+                  <Download className="w-5 h-5 mr-2" />
+                  Download Now for ₹499
+                </Button>
+              </Link>
 
               <div className="flex items-center gap-2">
                 <div className="flex">

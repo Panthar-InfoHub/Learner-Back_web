@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 import { Download, Shield, Zap, Users } from "lucide-react"
 
 export default function FinalCTASection() {
@@ -32,13 +33,15 @@ export default function FinalCTASection() {
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.2 }}
           >
-            <Button
-              size="lg"
-              className="bg-white hover:bg-[#F3F8FF] text-[#0A3D91] px-12 py-8 text-xl font-semibold rounded-2xl shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-white/20"
-            >
-              <Download className="w-6 h-6 mr-3" />
-              Download Your Interior Design eBook Now
-            </Button>
+            <Link href="https://learnerbag.com/ebook-2-2/" >
+              <Button variant="secondary"
+                size="lg"
+                className="bg-white hover:bg-[#F3F8FF] text-[#0A3D91] px-12 py-8 text-xl font-semibold rounded-2xl shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-white/20"
+              >
+                <Download className="w-6 h-6 mr-3" />
+                Download Your Interior Design eBook Now
+              </Button>
+            </Link>
           </motion.div>
 
           {/* Trust badges */}
