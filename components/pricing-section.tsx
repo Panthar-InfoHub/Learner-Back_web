@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Download, Shield, Clock, RefreshCw, Check } from "lucide-react"
+import Link from "next/link"
 
 const features = [
   "Complete 120+ Page eBook",
@@ -67,13 +68,15 @@ export default function PricingSection() {
               </div>
 
               {/* CTA Button */}
-              <Button
+              <Link href="https://learnerbag.com/ebook-2-2/">
+                <Button
                 size="lg"
                 className="w-full bg-[#0A3D91] hover:bg-[#083070] text-white py-8 text-xl rounded-xl shadow-lg shadow-[#0A3D91]/30 transition-all duration-300 hover:shadow-xl hover:shadow-[#0A3D91]/40 hover:-translate-y-1"
               >
                 <Download className="w-6 h-6 mr-3" />
                 Download Instantly
               </Button>
+              </Link>
 
               {/* Trust icons */}
               <div className="flex flex-wrap justify-center gap-6 mt-8 pt-8 border-t border-[#E6F1FF]">

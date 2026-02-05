@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Eye } from "lucide-react"
+import Link from "next/link"
 
 const pagePreviewsData = [
   { title: "Chapter 1: Foundations", image: "2.jpg" },
@@ -67,13 +68,15 @@ export default function SneakPeekSection() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-center mt-12"
         >
-          <Button
+          <Link href="https://learnerbag.com/ebook-2-2/">
+            <Button
             size="lg"
             className="bg-[#0A3D91] hover:bg-[#083070] text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-[#0A3D91]/25 transition-all duration-300 hover:shadow-xl hover:shadow-[#0A3D91]/30 hover:-translate-y-1"
           >
             Get the Full eBook Now — Start Designing Beautiful Spaces Today!
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
+          </Link>
         </motion.div>
       </div>
     </section>
